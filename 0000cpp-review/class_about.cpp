@@ -16,7 +16,10 @@ class Shape {
       }
 
       // virtual int area1() = 0;  // 含有纯虚函数的类无法实例化。
+      // 事实上，含有虚函数的类为抽象类
 };
+
+
 // Main function for the program
 int main() {
     Shape *shape;
