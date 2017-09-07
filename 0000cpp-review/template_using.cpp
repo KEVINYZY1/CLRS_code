@@ -35,7 +35,7 @@ public:
 };
 
 template <class T>
-void Stack<T>::push(T const& elem){  // 实现方法时，显示类型一定要带着，调用时才可以生咯，见行73
+void Stack<T>::push(T const& elem){  // 实现方法时，显示类型一定要带着，调用时才可以省略，见行73
     //append copy of passed element
     elems.push_back(elem);
 }
