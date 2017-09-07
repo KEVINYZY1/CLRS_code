@@ -19,8 +19,9 @@ int main(){
 }
 
 void print_constant(){
+    // const int 等价于 int const
     const int length = 20;
-    const int width = 10;
+    int const width = 10;
     const char new_line = '\n';
 
     cout << length * width << new_line;
