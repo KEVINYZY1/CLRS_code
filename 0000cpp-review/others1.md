@@ -10,3 +10,4 @@ char\* 和 char[] 区别：https://stackoverflow.com/questions/7564033/differenc
 
 char s1[20]; char \*s = "test"; 中sizeof(s1)与sizeof(s)区别：https://stackoverflow.com/questions/17298172/how-does-sizeof-work-for-char-pointer-variables ，实际操作见 basic\_io.cpp
 
+Quick start C++ Web Programming 略
