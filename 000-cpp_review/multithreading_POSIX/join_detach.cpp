@@ -7,7 +7,6 @@ using namespace std;
 
 void *wait(void *t)
 {
-    int i;
     long tid;
 
     tid = (long)t;
