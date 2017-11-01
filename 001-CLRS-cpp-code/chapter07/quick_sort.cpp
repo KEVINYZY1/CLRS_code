@@ -11,20 +11,19 @@ int partition(vector<int> &arr, int start, int end)
 	int element = arr[end];
 	int tmp = element;
 	int i = start - 1;
-	for (int j = start; j <= end - 1; j++)
+	for (int j = start; j <= end; j++)
 	{
 		if (arr[j] <= element)
 		{
 			i += 1;
-			tmp = arr[j];
-			arr[j] = arr[i];
-			arr[i] = tmp;
+			if (i < j)
+			{
+				tmp = arr[j];
+				arr[j] = arr[i];
+				arr[i] = tmp;
+			}
 		}
 	}
-	i += 1;
-	tmp = arr[end];
-	arr[end] = arr[i];
-	arr[i] = tmp;
 	return i;
 }
 
