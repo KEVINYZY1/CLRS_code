@@ -48,7 +48,9 @@ void heapify_recursively(vector<auto> & arr, int pos, int max_index){
     }
 }
 
-void build_heap(vector<auto> & arr){
+void build_heap(vector<auto> & arr){ß
+    // 建堆过程虽然对N/2个节点进行了可能的调整，但越在前面的元素，需比较的次数越少，
+    // 且比较次数少的占大头，最后累计求和起来，复杂度只有O(N)
     int last_not_leaf_index = arr.size()/2 - 1;
     for(int i=last_not_leaf_index; i>=0; i--){
         heapify_recursively(arr, i, arr.size()-1);

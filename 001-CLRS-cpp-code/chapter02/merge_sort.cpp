@@ -5,9 +5,10 @@
 using namespace std;
 
 
+// 总时间复杂度 O(NlogN), 空间复杂度O(N)
 template <typename T>
 void merge(vector<T> &arr, int start, int mid, int end){
-    vector<T> left, right;
+    vector<T> left, right;  // 空间复杂度贡献 O(N)
     for(int i=start; i<=mid; i++){
         left.push_back(arr[i]);
     }
@@ -40,7 +41,7 @@ template <typename T>
 void merge_sort(vector<T> &arr, int start, int end){
     if (start < end){
         int mid = (start+end)/2;
-        merge_sort<T>(arr, start, mid);
+        merge_sort<T>(arr, start, mid);  // 递归调用，空间复杂度贡献 O(logN)
         merge_sort<T>(arr, mid+1, end);
         merge<T>(arr, start, mid, end);
     }
