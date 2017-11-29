@@ -20,6 +20,9 @@
     - hoare快排
     - 区间模糊快排
 
-- chapter 08 线性时间排序 [python]
-    - TODO
+- chapter 08 线性时间排序 [python3]
+    - 计数排序
+    - 桶排序
 
+- chapter 09 中位数和顺序统计量 [python3]
+    - TODO
