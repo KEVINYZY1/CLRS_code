@@ -2,3 +2,4 @@
 *.exe
 *.dat
 .vscode/
+.idea/
