@@ -25,4 +25,7 @@
     - 桶排序
 
 - chapter 09 中位数和顺序统计量 [python3]
+    - 快速选择
+
+- chapter 10 基本数据结构 [cpp]
     - TODO
