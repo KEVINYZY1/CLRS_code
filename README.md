@@ -1,4 +1,4 @@
-# oj-cpp
+5# oj-cpp
 
 - chapter 02 算法基础 [cpp]
     - 插入排序
@@ -27,5 +27,8 @@
 - chapter 09 中位数和顺序统计量 [python3]
     - 快速选择
 
-- chapter 10 基本数据结构 [cpp]
-    - TODO
+- chapter 10 基本数据结构 [python3]
+    - 带父节点的o(1)空间复杂度二叉树中序遍历
+    - 普通二叉树的遍历
+
+- chapter 11 散列表 [TODO]
