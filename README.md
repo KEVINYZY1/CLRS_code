@@ -1,4 +1,4 @@
-5# oj-cpp
+# oj-cpp
 
 - chapter 02 算法基础 [cpp]
     - 插入排序
