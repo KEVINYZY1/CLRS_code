@@ -96,7 +96,7 @@ class BinaryTree:
             x = node.parent
         return x
 
-    def __transplant(self, old_node, new_node):
+    def _transplant(self, old_node, new_node):
         if old_node is self.root:
             self.root = new_node
         elif old_node is old_node.parent.left:
@@ -111,17 +111,17 @@ class BinaryTree:
         if not self.has_node(node):
             return
         if node.left is None:
-            self.__transplant(node, node.right)
+            self._transplant(node, node.right)
         elif node.right is None:
-            self.__transplant(node, node.left)
+            self._transplant(node, node.left)
         else:
             # TODO select the bigger height of successor and predecessor to del
             successor = self.minimum(node.right)
             if successor.parent is not node:
-                self.__transplant(successor, successor.right)
+                self._transplant(successor, successor.right)
                 successor.right = node.right
                 successor.right.parent = successor
-            self.__transplant(node, successor)
+            self._transplant(node, successor)
             successor.left = node.left
             successor.left.parent = successor
         del node
